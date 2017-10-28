@@ -9,18 +9,19 @@
 
   </head>
   <body>
-    <form action="login.html"method="post">
+    <form action="{% url 'index' %}"method="post">
+      {% csrf_token %}
       <center>
         <h1>Instagram
         <div class="bloque_principal">
           <br>
-         <input  type="text" name="" placeholder="correo" >
+         <input  type="text" name="correo" placeholder="correo" >
           <br>
-          <input  type="text" name="" placeholder="Nombre" >
+          <input  type="text" name="nombre_completo" placeholder="Nombre" >
           <br>
-          <input  type="text" name="" placeholder="Nombre de usuario" >
+          <input  type="text" name="usuario" placeholder="Nombre de usuario" >
           <br>
-          <input  type="password" name="" placeholder="contraseña" >
+          <input  type="password" name="password" placeholder="contraseña" >
           <br>
         </div>
           <div id ="bloque_p_2">
