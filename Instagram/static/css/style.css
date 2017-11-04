@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css?family=Inconsolata");
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  backgraund: #999;
+  font-family: 'Inconsolata', monospace;
+}
+
+.photo_container {
+  width: 500px;
+  background: white;
+  border: 1px solid #ccc;
+}
+
+.photo_container .photo_header {
+  display: flex;
+}
+
+.photo_container .photo_user {
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.photo_container .photo_image img {
+  width: 100%;
+  display: block;
+}
+
+.photo_container .photo_icons {
+  font-size: 1.5rem;
+  padding: 10px;
+  padding-botton: 0;
+}
+
+[class '*=icon-'] {
+  padding: 5px;
+}
+
+.photo_container .photo_likes {
+  margin: 0;
+  padding: 10px 10px 10px;
+}
+
+.photo-container .photo-coment {
+  margin: 10px 5;
+}
+
+.photo_add_comment input {
+  padding: 10px 0;
+  margin: 0 10px;
+  border-top: 1px solid #ccc;
+  aling-items: center;
+}

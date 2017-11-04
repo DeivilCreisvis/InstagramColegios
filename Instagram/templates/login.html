@@ -6,12 +6,13 @@
     <title>login</title>
   </head>
   <body>
-    <form action="home.html" method="post">
+    <form  class = action="{% url 'login' %} " method="post">
+      {% csrf_token %}
       <center>
         <div id = "bloque_2">
-          <input type="text" name="" placeholder="Usuario">
+          <input type="text" name="username" placeholder="Usuario">
           <br>
-          <input type="password" name "" placeholder="Contraseña" >
+          <input type="password" name="password" placeholder="Contraseña" >
           <br>
           <input type="submit" name="" value="Aceptar">
         </div>
