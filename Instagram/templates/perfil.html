@@ -1,3 +1,4 @@
+{% load static  %}
 <!DOCTYPE html>
 <html >
 <head>
@@ -5,11 +6,8 @@
   <title>A Pen by  carlos esteban guzman baquero </title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
-  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
-
-
-      <link rel="stylesheet" href="css/style.css">
+ <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel="stylesheet" href="{% static 'css/stilo.css' %}">
 
 
 </head>
@@ -20,7 +18,7 @@
   <section class="insta-header"><img class="insta-photo-profile" src="https://i.pinimg.com/736x/fa/c2/27/fac227b4eb77528d284df935e15ec293--best-music-my-music.jpg"/>
     <section class="insta-header-data">
       <section class="insta-info">
-        <h2 class="insta-username">{{usuario_actual.usuario_django.username }}</h2>
+        <h2 class="insta-username">{{ usuario_actual.usuario_django.username }}</h2>
         <button class="insta-follow-botton">Seguir</button>
         <button class="insta-suggestions fa fa-caret-down"></button>
         <button class="insta-optiond fa fa-ellipsis-h"></button>
